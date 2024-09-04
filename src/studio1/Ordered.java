@@ -16,6 +16,13 @@ public class Ordered {
 		System.out.println("Value for z?");
 		int z = in.nextInt();
 
+		boolean xly = x < y;
+		boolean xgy = x > y;
+		boolean ygz = y > z;
+		boolean ylz = y < z;
+		
+		boolean isOrdered = (xgy && ygz) || (xly && ylz); 
+		System.out.println(isOrdered);
 	}
 
 }
